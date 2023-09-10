@@ -1,0 +1,19 @@
+<!-- EnglishLearningApp/templates/EnglishLearningApp/english_course_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Courses Giao tiep </title>
+</head>
+<body>
+    <h1>English Courses ngu phap </h1>
+    <h1> Nghe </h1>
+    <h1> Noi </h1>
+    <h1> Doc </h1>
+    <h1> Viet </h1>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course.title }} - {{ course.level }} - {{ course.instructor }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
